@@ -4,18 +4,22 @@ import Home from "./Page/Home";
 import About from "./Page/About";
 import Contact from "./Page/Contact";
 import Menu from "./Page/Menu";
+import NavBar from "./Component/NavBar";
+import Footer from "./Component/Footer";
 
 
 const App = () => {
   return (
     <div >
       <BrowserRouter>
+      <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
