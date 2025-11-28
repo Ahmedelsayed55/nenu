@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 const Home = () => {
   return (
     <div>
@@ -16,19 +16,26 @@ const Home = () => {
               قائمة الاسعار
             </Link>
             <Link className="btn btn-warning p-5 text-2xl" to="/contact">
-              للتواصل او الشكوي
+              للتواصل معنا
             </Link>
             <div className="flex gap-5 mt-5">
-             
-              <a href="https://www.facebook.com/retajpastry" target="_blank">
+              <a href="https://www.facebook.com/retajpastry" target="_blank" className=" hover:scale-125 transition-transform duration-300">
                 <FaFacebook className="text-4xl text-yellow-500" />
               </a>
               <a
-                href="https://www.instagram.com/retajpastry
-"
+                href="https://www.instagram.com/retajpastry"
                 target="_blank"
+                className=" hover:scale-125 transition-transform duration-300"
               >
                 <FaInstagram className="text-4xl text-yellow-500" />
+              </a>
+              <a
+                href="https://wa.me/201090222129?text=Hello"               
+                target="_blank"
+                rel="noopener noreferrer"
+className=" hover:scale-125 transition-transform duration-300"
+              >
+                <FaWhatsapp className="text-4xl text-yellow-500" />
               </a>
             </div>
           </div>
