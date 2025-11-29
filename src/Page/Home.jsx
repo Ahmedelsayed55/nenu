@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 const Home = () => {
   return (
-    <div>
-      <div className="container mx-auto">
-        <div className="mt-10 bg-base-100 flex items-center justify-center rounded-2xl">
+    <div className="bg-gray-200 h-dvh flex items-center justify-center ">
+      <div className="container mx-auto ">
+        <div className=" flex items-center justify-center rounded-2xl">
           <div className="flex flex-col items-center gap-5">
             <img className="w-60" src={logo} alt="Logo" />
-            <h1 className="text-3xl font-bold -mt-10 mb-3">
+            <h1 className="text-3xl font-bold text-center mb-3">
               حلواني ريتاج-Retaj pastry
             </h1>
             <Link className="btn btn-warning p-5 text-2xl" to="/menu">

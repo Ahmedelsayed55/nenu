@@ -27,10 +27,10 @@ const Cake26 = ({id}) => {
       
      {prduct.map((item)=>{
       return(
-        <div key={item.id} className="rounded-2xl shadow-yellow-500 shadow-sm p-5 flex flex-col gap-3 items-center transition hover:scale-110">
+        <div key={item.id} className="rounded-2xl shadow-blue-200 shadow-sm p-5 flex flex-col gap-3 items-center transition hover:scale-110 bg-gray-100">
           <img className="w-3/4 mb-3" src={item.img} alt="Cake" />
           <h2 className="text-center">{item.name}</h2>
-          <h2>{item.price} ج.م</h2>
+          <h2 className="text-center text-yellow-700">{item.price} ج.م</h2>
         </div>
       )
      })}

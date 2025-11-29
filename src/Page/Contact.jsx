@@ -2,9 +2,10 @@ import React from "react";
 import { FaWhatsapp, FaPhone, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 const Contact = () => {
   return (
-    <div className="container mx-auto mt-10">
+    <div className="bg-gray-200">
+    <div className="container mx-auto pt-20 shadow-xl shadow-blue-300 ">
       {/*  المصنع  */}
-      <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+      <div className="collapse collapse-arrow  border border-gray-300 text-black">
         <input type="radio" name="my-accordion-2" defaultChecked />
         <div className="collapse-title font-semibold text-3xl text-yellow-500 mb-2">
           الإدارة والمصنع
@@ -54,7 +55,7 @@ const Contact = () => {
       {/* محل 1  */}
       {/* محل 1  */}
       {/* محل 1  */}
-      <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+      <div className="collapse collapse-arrow  border border-gray-300  text-black">
         <input type="radio" name="my-accordion-2" />
         <div className="collapse-title font-semibold text-3xl text-yellow-500 mb-2">
           محل (1) شارع جمال عبدالناصر
@@ -106,7 +107,7 @@ const Contact = () => {
       {/* محل 2 */}
       {/* محل 2 */}
       {/* محل 2 */}
-      <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+      <div className="collapse collapse-arrow  border border-gray-300 text-black">
         <input type="radio" name="my-accordion-2" />
         <div className="collapse-title font-semibold text-3xl text-yellow-500 mb-2">
           محل (2) شارع بورسعيد
@@ -151,7 +152,10 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+
+
+
+      <div className="collapse collapse-arrow  border border-gray-300  text-black">
         <input type="radio" name="my-accordion-2" />
         <div className="collapse-title font-semibold text-3xl text-yellow-500 mb-2">
           محل (7) الرياض
@@ -198,6 +202,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

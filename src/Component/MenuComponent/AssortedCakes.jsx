@@ -20,25 +20,20 @@ export const AssortedCakes = ({id}) => {
         { id: 16, name: "تورته فلاور (20)", price: 350, img: Cake },
       ];
   return (
-   <div>
-      <h1 className="text-[16px] md:text-2xl mb-5">تورت مقاسات متنوعه</h1>
-      <div
-        className="container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
-        id={id}
-      >
-        {prduct.map((item) => {
-          return (
-            <div
-              key={item.id}
-              className="rounded-2xl shadow-yellow-500 shadow-sm p-5 flex flex-col gap-3 items-center transition hover:scale-110"
-            >
-              <img className="w-3/4 mb-3" src={item.img} alt="Cake" />
-              <h2 className="text-center">{item.name}</h2>
-              <h2>{item.price} ج.م</h2>
-            </div>
-          );
-        })}
-      </div>
+       <div>
+      <h1 className="text-[16px] md:text-2xl mb-5">تورته مقاس (26)</h1>
+ <div className='container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5' id={id}>
+      
+     {prduct.map((item)=>{
+      return(
+        <div key={item.id} className="rounded-2xl shadow-blue-200 shadow-sm p-5 flex flex-col gap-3 items-center transition hover:scale-110 bg-gray-100">
+          <img className="w-3/4 mb-3" src={item.img} alt="Cake" />
+          <h2 className="text-center">{item.name}</h2>
+          <h2 className="text-center text-yellow-700">{item.price} ج.م</h2>
+        </div>
+      )
+     })}
+    </div>
     </div>
   )
 }
