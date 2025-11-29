@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-const NavItem = ({ id26, id20, id18, idMixed }) => {
+const NavItem = ({ id26, id20, id18, idMixed, idGato }) => {
   const [active, setActive] = useState(id26);
 
  useEffect(() => {
@@ -40,6 +40,7 @@ const NavItem = ({ id26, id20, id18, idMixed }) => {
     { id: id20, label: "تورته مقاس (20)" },
     { id: id18, label: "تورته مقاس (18)" },
     { id: idMixed, label: "تورت مقاسات متنوعة" },
+    { id: idGato, label: "جاتو" },
   ];
 
   return (

@@ -5,12 +5,14 @@ import Cake20 from "../Component/MenuComponent/Cake20";
 import NavItem from "../Component/MenuComponent/NavItem";
 import { Cake18 } from "../Component/MenuComponent/Cake18";
 import { AssortedCakes } from "../Component/MenuComponent/AssortedCakes";
+import { Gato } from "../Component/MenuComponent/Gato";
 
 const Menu = () => {
   let idCake26 = "idCake26";
   let idCake20 = "idCake20";
   let idCake18 = "idCake18";
   let idMixed = "idMixed";
+  let idGato = "idGato";
 
   return (
     <div>
@@ -21,6 +23,7 @@ const Menu = () => {
         id20={idCake20}
         id18={idCake18}
         idMixed={idMixed}
+        idGato={idGato}
       />
 
       <section id={idCake26} className="container mx-auto py-12 scroll-mt-24">
@@ -37,6 +40,9 @@ const Menu = () => {
 
       <section id={idMixed} className="container mx-auto py-12 scroll-mt-24">
         <AssortedCakes />
+      </section>
+      <section id={idGato} className="container mx-auto py-12 scroll-mt-24">
+        <Gato />
       </section>
     </div>
   );

@@ -3,21 +3,21 @@ import Cake from "../../assets/snecars26.png"
 const Cake26 = ({id}) => {
   const prduct = [
     {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
-    {id:1, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:2, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:3, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:4, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:5, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:6, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:7, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:8, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:9, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:10, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:11, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:12, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:13, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:14, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:15, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
+    {id:16, name: "تورته سنيكرز مقاس(26)", price: 350, img: Cake },
 
   ]
   return (
@@ -28,7 +28,7 @@ const Cake26 = ({id}) => {
      {prduct.map((item)=>{
       return(
         <div key={item.id} className="rounded-2xl shadow-yellow-500 shadow-sm p-5 flex flex-col gap-3 items-center transition hover:scale-110">
-          <img className="w-3/4" src={item.img} alt="Cake" />
+          <img className="w-3/4 mb-3" src={item.img} alt="Cake" />
           <h2 className="text-center">{item.name}</h2>
           <h2>{item.price} ج.م</h2>
         </div>
