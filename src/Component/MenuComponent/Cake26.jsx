@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Cake26 = () => {
+const Cake26 = ({id}) => {
   return (
-    <div className='h-dvh'>
+    <div className='h-dvh' id={id}>
       Cake26
     </div>
   )

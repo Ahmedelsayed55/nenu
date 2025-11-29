@@ -3,16 +3,30 @@ import Hero from '../Component/MenuComponent/Hero'
 import Cake26 from '../Component/MenuComponent/Cake26'
 import Cake20 from '../Component/MenuComponent/Cake20'
 import NavItem from '../Component/MenuComponent/NavItem'
+import { Cake18 } from '../Component/MenuComponent/Cake18'
 
 
 const Menu = () => {
-    
+    let idCake26 = "idCake26"
+    let idCake20 = "idCake20"
+    let idCake18 = "idCake18"
+ 
   return (
-    <div>
+   <div>
       <Hero />
-      <NavItem />
-      <Cake26 />
-      <Cake20 />
+
+      <NavItem id26={idCake26} id20={idCake20} id18={idCake18} />
+
+      <section id={idCake26} className='container mx-auto py-15'>
+        <Cake26 />
+      </section>
+
+      <section id={idCake20} className='container mx-auto py-15'>
+        <Cake20 />
+      </section>
+      <section id={idCake18} className='container mx-auto py-15'>
+        <Cake18 />
+      </section>
     </div>
   )
 }
