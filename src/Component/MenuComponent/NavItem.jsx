@@ -44,7 +44,7 @@ const NavItem = ({ id26, id20, id18, idMixed, idGato }) => {
   ];
 
   return (
-   <div className="sticky top-2 mr-5  bg-gray-200 rounded-b my-3 z-50">
+   <div className="sticky top-3 mr-1 md:mr-5  bg-gray-200 rounded-b my-3 z-50">
   <Swiper
     className="h-13 md:h-16"   // <<< ثبّت الارتفاع هنا
     spaceBetween={10}
