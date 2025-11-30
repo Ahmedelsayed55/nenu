@@ -33,7 +33,7 @@ export const AssortedCakes = ({id}) => {
               className="rounded-sm shadow-2xl shadow-gray-400 pt-15 px-5 flex flex-col gap-5 items-center transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
             >
               <img className="w-[85%] mb-10 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]" src={item.img} alt="Cake" />
-              <div className="w-full flex flex-col gap-5 p-3">
+              <div className="w-full flex flex-col gap-7 py-3">
                 <h2 className="text-start text-[20px] font-bold">
                   {item.name}
                 </h2>
