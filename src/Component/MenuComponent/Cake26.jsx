@@ -48,10 +48,10 @@ const Cake26 = ({ id }) => {
           return (
             <div
               key={item.id}
-              className="rounded-sm h-120 shadow-2xl shadow-gray-400 pt-15 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
+              className="rounded-sm h-70 md:h-120 shadow-2xl shadow-gray-400 pt-15 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
             >
               <img className=" w-full md:w-60  md:mb-10 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]" src={item.img} alt="Cake" />
-              <div className="w-full flex flex-col gap-15 py-3 px-1">
+              <div className="w-full flex flex-col gap-7 md:gap-15 py-3 px-1">
                 <h2 className="text-start text-[14px] md:text-[20px] font-bold text-gray-900">
                   {item.name}
                 </h2>
