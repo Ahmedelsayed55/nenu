@@ -3,7 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { useRef } from "react";
 
-const NavItem = ({ id26, id20, id18, idMixed, idGato, idChocolate, idLayers }) => {
+const NavItem = ({
+  id26,
+  id20,
+  id18,
+  idMixed,
+  idGato,
+  idChocolate,
+  idLayers,
+}) => {
   const swiperRef = useRef(null);
   const [active, setActive] = useState(id26);
 
@@ -77,8 +85,8 @@ const NavItem = ({ id26, id20, id18, idMixed, idGato, idChocolate, idLayers }) =
         {sizes.map((item, index) => (
           <SwiperSlide
             key={item.id}
-            data-id={item.id} 
-            data-index={index} 
+            data-id={item.id}
+            data-index={index}
             className="!w-auto flex items-stretch"
           >
             <a

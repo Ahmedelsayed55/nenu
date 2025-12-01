@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 const Home = () => {
   return (
-    <div className="bg-gray-200 pt-20 pb-10 md:py-15 lg:py-32 flex items-center justify-center ">
+    <div className="bg-gray-200 pt-20 pb-10 md:py-15 lg:py-32 text-white flex items-center justify-center ">
       <div className="container mx-auto ">
         <div className=" flex items-center justify-center rounded-2xl">
           <div className="flex flex-col items-center  gap-10">
@@ -14,13 +14,13 @@ const Home = () => {
             </h1>
             <div className="flex flex-col gap-5">
               <Link
-                className="btn bg-cyan-800 px-20 md:px-40  py-6 rounded-3xl text-2xl"
+                className="btn text-white bg-cyan-800 px-20 md:px-40  py-6 rounded-3xl text-2xl"
                 to="/menu"
               >
                 قائمة الاسعار
               </Link>
               <Link
-                className="btn bg-cyan-800 px-20 md:px-40  py-6 rounded-3xl text-2xl"
+                className="btn text-white bg-cyan-800 px-20 md:px-40  py-6 rounded-3xl text-2xl"
                 to="/contact"
               >
                 للتواصل معنا
