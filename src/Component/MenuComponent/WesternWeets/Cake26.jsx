@@ -15,9 +15,10 @@ import Cake15 from "../../../assets/assets26/a15.png";
 import Cake16 from "../../../assets/assets26/a16.png";
 import Cake17 from "../../../assets/assets26/a17.png";
 import Cake18 from "../../../assets/assets26/a18.png";
+import { useState } from "react";
 const Cake26 = ({ id }) => {
   const prduct = [
-      { id: 1, name: "تورته فلاور ", price: 350, img: Cake1 },
+    { id: 1, name: "تورته فلاور ", price: 350, img: Cake1 },
     { id: 2, name: "تورته لوتس شيكولاته ", price: 350, img: Cake2 },
     { id: 3, name: "تورته جلاكسي ", price: 350, img: Cake3 },
     { id: 4, name: "تورته نوتيلا فراوله ", price: 350, img: Cake4 },
@@ -35,9 +36,13 @@ const Cake26 = ({ id }) => {
     { id: 17, name: "تورته سنيكرز ", price: 350, img: Cake17 },
     { id: 18, name: "تورته سنيكرز ", price: 350, img: Cake18 },
   ];
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [open, setOpen] = useState(false);
   return (
     <div>
-      <h1 className="text-[16px] font-bold md:text-2xl mb-5">تورته مقاس (26)</h1>
+      <h1 className="text-[16px] font-bold md:text-2xl mb-5">
+        تورته مقاس (26)
+      </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
         id={id}
@@ -46,9 +51,17 @@ const Cake26 = ({ id }) => {
           return (
             <div
               key={item.id}
-              className="rounded  md:h-120 shadow-2xl shadow-gray-400 pt-10 md:pt-15 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
+              onClick={() => {
+                setSelectedItem(item);
+                setOpen(true);
+              }}
+              className="rounded  shadow-2xl shadow-gray-400 pt-10 md:pt-15 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
             >
-              <img className=" w-full md:w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]" src={item.img} alt="Cake" />
+              <img
+                className=" w-full md:w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
+                src={item.img}
+                alt="Cake"
+              />
               <div className="w-full flex flex-col gap-7 md:gap-12 py-3 px-3">
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
                   {item.name}
@@ -61,6 +74,34 @@ const Cake26 = ({ id }) => {
           );
         })}
       </div>
+      {/* model for details */}
+      {/* model for details */}
+      {open && selectedItem && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className="bg-gray-100 rounded-3xl px-5 py-7 w-sm md:w-sm lg:w-sm shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center relative">
+            <button
+              className="absolute px-5 py-4 top-2 right-4 text-red-600 text-2xl transition duration-300 cursor-pointer hover:bg-red-500 hover:text-white  rounded-full"
+              onClick={() => setOpen(false)}
+            >
+              ✖
+            </button>
+
+          <img
+                className=" w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
+                src={selectedItem.img}
+                alt="Cake"
+              />
+              <div className="w-full flex flex-col gap-7 md:gap-12 py-3 px-3">
+                <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
+                  {selectedItem.name}
+                </h2>
+                <h2 className="text-start text-[12px] md:text-[20px] font-bold text-cyan-700">
+                  {selectedItem.price} ج.م
+                </h2>
+              </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
