@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Hero from "../Component/MenuComponent/Hero";
-import Cake26 from "../Component/MenuComponent/Cake26";
-import Cake20 from "../Component/MenuComponent/Cake20";
+import Cake26 from "../Component/MenuComponent/WesternWeets/Cake26";
+import Cake20 from "../Component/MenuComponent/WesternWeets/Cake20";
 import NavItem from "../Component/MenuComponent/NavItem";
-import { Cake18 } from "../Component/MenuComponent/Cake18";
-import { AssortedCakes } from "../Component/MenuComponent/AssortedCakes";
-import { Gato } from "../Component/MenuComponent/Gato";
+import { Cake18 } from "../Component/MenuComponent/WesternWeets/Cake18";
+import { AssortedCakes } from "../Component/MenuComponent/WesternWeets/AssortedCakes";
+import { Gato } from "../Component/MenuComponent/WesternWeets/Gato";
 import { IoArrowUp } from "react-icons/io5";
-import Chocolate from "../Component/MenuComponent/Chocolate";
+import Chocolate from "../Component/MenuComponent/Chocolate/Chocolate";
+import { CakeLayers } from "../Component/MenuComponent/WesternWeets/CakeLayers";
 const Menu = () => {
   let idCake26 = "idCake26";
   let idCake20 = "idCake20";
@@ -15,6 +16,7 @@ const Menu = () => {
   let idMixed = "idMixed";
   let idGato = "idGato";
   let idChocolate = "idChocolate";
+  let idLayers = "idLayers";
 
 
     const [show, setShow] = useState(false);
@@ -46,6 +48,7 @@ const Menu = () => {
         idMixed={idMixed}
         idGato={idGato}
         idChocolate={idChocolate}
+        idLayers={idLayers}
       />
 
       <section id={idCake26} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
@@ -62,6 +65,9 @@ const Menu = () => {
 
       <section id={idMixed} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <AssortedCakes />
+      </section>
+      <section id={idLayers} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+        <CakeLayers />
       </section>
       <section id={idGato} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Gato />

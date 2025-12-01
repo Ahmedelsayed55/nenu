@@ -1,20 +1,20 @@
-import Cake1 from "../../assets/assets26/a1.png";
-import Cake2 from "../../assets/assets26/a2.png";
-import Cake3 from "../../assets/assets26/a3.png";
-import Cake4 from "../../assets/assets26/a4.png";
-import Cake5 from "../../assets/assets26/a5.png";
-import Cake6 from "../../assets/assets26/a6.png";
-import Cake7 from "../../assets/assets26/a7.png";
-import Cake8 from "../../assets/assets26/a8.png";
-import Cake9 from "../../assets/assets26/a9.png";
-import Cake10 from "../../assets/assets26/a10.png";
-import Cake11 from "../../assets/assets26/a11.png";
-import Cake12 from "../../assets/assets26/a12.png";
-import Cake14 from "../../assets/assets26/a14.png";
-import Cake15 from "../../assets/assets26/a15.png";
-import Cake16 from "../../assets/assets26/a16.png";
-import Cake17 from "../../assets/assets26/a17.png";
-import Cake18 from "../../assets/assets26/a18.png";
+import Cake1 from "../../../assets/assets26/a1.png";
+import Cake2 from "../../../assets/assets26/a2.png";
+import Cake3 from "../../../assets/assets26/a3.png";
+import Cake4 from "../../../assets/assets26/a4.png";
+import Cake5 from "../../../assets/assets26/a5.png";
+import Cake6 from "../../../assets/assets26/a6.png";
+import Cake7 from "../../../assets/assets26/a7.png";
+import Cake8 from "../../../assets/assets26/a8.png";
+import Cake9 from "../../../assets/assets26/a9.png";
+import Cake10 from "../../../assets/assets26/a10.png";
+import Cake11 from "../../../assets/assets26/a11.png";
+import Cake12 from "../../../assets/assets26/a12.png";
+import Cake14 from "../../../assets/assets26/a14.png";
+import Cake15 from "../../../assets/assets26/a15.png";
+import Cake16 from "../../../assets/assets26/a16.png";
+import Cake17 from "../../../assets/assets26/a17.png";
+import Cake18 from "../../../assets/assets26/a18.png";
 const Cake26 = ({ id }) => {
   const prduct = [
       { id: 1, name: "تورته فلاور ", price: 350, img: Cake1 },
@@ -46,7 +46,7 @@ const Cake26 = ({ id }) => {
           return (
             <div
               key={item.id}
-              className="rounded h-70 md:h-120 shadow-2xl shadow-gray-400 pt-10 md:pt-15 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
+              className="rounded  md:h-120 shadow-2xl shadow-gray-400 pt-10 md:pt-15 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
             >
               <img className=" w-full md:w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]" src={item.img} alt="Cake" />
               <div className="w-full flex flex-col gap-7 md:gap-12 py-3 px-3">
