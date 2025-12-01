@@ -92,10 +92,10 @@ const Cake26 = ({ id }) => {
                 alt="Cake"
               />
               <div className="w-full flex flex-col gap-7 md:gap-12 py-3 px-3">
-                <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
+                <h2 className="text-start text-[20px] md:text-[24px] font-bold text-cyan-950">
                   {selectedItem.name}
                 </h2>
-                <h2 className="text-start text-[12px] md:text-[20px] font-bold text-cyan-700">
+                <h2 className="text-start text-[20px] md:text-[20px] font-bold text-cyan-700">
                   {selectedItem.price} ج.م
                 </h2>
               </div>
