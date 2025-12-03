@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Cake from "../../../assets/chocolate.png";
 const Chocolate = ({ id }) => {
   const prduct = [
@@ -17,12 +17,24 @@ const Chocolate = ({ id }) => {
     { id: 13, name: "شيكولاته", price: 35, img: Cake },
     { id: 24, name: "شيكولاته", price: 35, img: Cake },
   ];
-  const [selectedItem, setSelectedItem] = useState(null);
+   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden"; // يمنع الاسكرول
+    } else {
+      document.body.style.overflow = "auto"; // يرجع الاسكرول
+    }
+  
+    return () => {
+      document.body.style.overflow = "auto"; // احتياطي عند الخروج من الكمبوننت
+    };
+  }, [open]);
+ 
   return (
     <div>
       <h1 className="text-[16px] font-bold md:text-2xl mb-5">
-        تورته مقاس (26)
+      شيكولاته
       </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
@@ -58,8 +70,8 @@ const Chocolate = ({ id }) => {
       {/* model for details */}
       {/* model for details */}
       {open && selectedItem && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-gray-100 rounded-3xl px-5 py-7 w-sm md:w-sm lg:w-sm shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center relative">
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4 ">
+          <div onClick={(e)=>e.stopPropagation()} className="bg-gray-100 rounded px-5 h-[80%] pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative">
             <button
               className="absolute px-5 py-4 top-2 right-4 text-red-600 text-2xl transition duration-300 cursor-pointer hover:bg-red-500 hover:text-white  rounded-full"
               onClick={() => setOpen(false)}
@@ -68,7 +80,7 @@ const Chocolate = ({ id }) => {
             </button>
 
             <img
-              className=" w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
+              className=" w-60 lg:w-[90%] md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
               src={selectedItem.img}
               alt="Cake"
             />
@@ -76,13 +88,13 @@ const Chocolate = ({ id }) => {
               <h2 className="text-start text-[20px] md:text-[24px] font-bold text-cyan-950">
                 {selectedItem.name}
               </h2>
-              <h2 className="text-start text-[20px] md:text-[20px] font-bold text-cyan-700">
+             <h2 className="text-start text-[20px] md:text-[20px] font-bold text-cyan-700">
                 {selectedItem.price} ج.م
               </h2>
             </div>
           </div>
         </div>
-      )}
+      )} 
     </div>
   );
 };

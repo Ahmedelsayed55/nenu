@@ -1,41 +1,41 @@
-import React, { useEffect, useState } from "react";
-import Cake from "../../../assets/hafelots.png";
-export const Cake18 = ({ id }) => {
-  const prduct = [
-    { id: 1, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 2, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 3, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 4, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 5, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 6, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 7, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 8, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 9, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 10, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 11, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 12, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 13, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 14, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 15, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 16, name: "تورته فلاور (20)", price: 350, img: Cake },
-  ];
-  const [selectedItem, setSelectedItem] = useState(null);
-  const [open, setOpen] = useState(false);
-  useEffect(() => {
-    if (open) {
-      document.body.style.overflow = "hidden"; // يمنع الاسكرول
-    } else {
-      document.body.style.overflow = "auto"; // يرجع الاسكرول
-    }
-  
-    return () => {
-      document.body.style.overflow = "auto"; // احتياطي عند الخروج من الكمبوننت
-    };
-  }, [open]);
+import React, { useEffect, useState } from 'react'
+import glashmx from "../../../assets/assetsRmadan/glashmx.png";
+import mdl3amanga from "../../../assets/assetsRmadan/mdl3amanga.png";
+import asawer from "../../../assets/assetsRmadan/asawer.png";
+import forma from "../../../assets/assetsRmadan/forma.png";
+import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
+import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
+import lotes from "../../../assets/assetsRmadan/lotes.png";
+export const RamadanSweets = ({id}) => {
+      const prduct = [
+        { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
+        { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },
+        { id: 3, name: " أساور", price: 35, img: asawer },
+        { id: 4, name: " أساور", price: 35, img: forma },
+        { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
+        { id: 5, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
+        { id: 5, name: " مدلعه لوتس ", price: 35, img: lotes },
+     
+      ];
+      const [selectedItem, setSelectedItem] = useState(null);
+      const [open, setOpen] = useState(false);
+
+      
+useEffect(() => {
+  if (open) {
+    document.body.style.overflow = "hidden"; // يمنع الاسكرول
+  } else {
+    document.body.style.overflow = "auto"; // يرجع الاسكرول
+  }
+
+  return () => {
+    document.body.style.overflow = "auto"; // احتياطي عند الخروج من الكمبوننت
+  };
+}, [open]);
   return (
     <div>
       <h1 className="text-[16px] font-bold md:text-2xl mb-5">
-        تورته مقاس (18)
+        رمضانيات
       </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
@@ -97,5 +97,5 @@ export const Cake18 = ({ id }) => {
         </div>
       )} 
     </div>
-  );
-};
+  )
+}

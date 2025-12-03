@@ -11,6 +11,8 @@ const NavItem = ({
   idGato,
   idChocolate,
   idLayers,
+  idRamadan,
+  idKonafa,
 }) => {
   const swiperRef = useRef(null);
   const [active, setActive] = useState(id26);
@@ -52,6 +54,8 @@ const NavItem = ({
     { id: idMixed, label: "تورت مقاسات متنوعة" },
     { id: idLayers, label: "تورت أدوار" },
     { id: idGato, label: "جاتوة" },
+    { id: idRamadan, label: "رمضانيات" },
+    { id: idKonafa, label: "كنافات" },
     { id: idChocolate, label: "شيكولاتة" },
   ];
   useEffect(() => {

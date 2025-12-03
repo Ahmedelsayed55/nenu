@@ -9,6 +9,8 @@ import { Gato } from "../Component/MenuComponent/WesternWeets/Gato";
 import { IoArrowUp } from "react-icons/io5";
 import Chocolate from "../Component/MenuComponent/Chocolate/Chocolate";
 import { CakeLayers } from "../Component/MenuComponent/WesternWeets/CakeLayers";
+import { RamadanSweets } from "../Component/MenuComponent/EsternSweets/RamadanSweets";
+import { Konafa } from "../Component/MenuComponent/EsternSweets/Konafa";
 const Menu = () => {
   let idCake26 = "idCake26";
   let idCake20 = "idCake20";
@@ -17,6 +19,8 @@ const Menu = () => {
   let idGato = "idGato";
   let idChocolate = "idChocolate";
   let idLayers = "idLayers";
+  let idRamadan = "idRamadan";
+  let idKonafa = "idKonafa";
 
 
     const [show, setShow] = useState(false);
@@ -49,6 +53,8 @@ const Menu = () => {
         idGato={idGato}
         idChocolate={idChocolate}
         idLayers={idLayers}
+        idRamadan={idRamadan}
+        idKonafa={idKonafa}
       />
 
       <section id={idCake26} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
@@ -71,6 +77,12 @@ const Menu = () => {
       </section>
       <section id={idGato} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Gato />
+      </section>
+      <section id={idRamadan} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+        <RamadanSweets />
+      </section>
+      <section id={idKonafa} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+        <Konafa />
       </section>
       <section id={idChocolate} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Chocolate />
