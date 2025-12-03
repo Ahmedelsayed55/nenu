@@ -164,7 +164,7 @@ const Menu = () => {
        {show && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 text-2xl md:text-3xl bg-cyan-600 text-white hover:bg-cyan-700 cursor-pointer p-3 rounded-full shadow-xl transition z-50"
+          className="fixed bottom-6 right-6 text-2xl md:text-3xl bg-cyan-600 text-white hover:bg-cyan-700 cursor-pointer p-3 rounded-full shadow-xl transition z-2"
         >
            <IoArrowUp />
         </button>
