@@ -20,6 +20,8 @@ import DryNuts from "../Component/MenuComponent/Dry&/DryNuts";
 import DollMillk from "../Component/MenuComponent/Dry&/DollMillk";
 import Coconut from "../Component/MenuComponent/Dry&/Coconut";
 import ReadyPackages from "../Component/MenuComponent/Dry&/ReadyPackages";
+import HartCake from "../Component/MenuComponent/WesternWeets/HartCake";
+import { Nawaem } from "../Component/MenuComponent/Nawaem/Nawaem";
 const Menu = () => {
   let idCake26 = "idCake26";
   let idCake20 = "idCake20";
@@ -39,6 +41,8 @@ const Menu = () => {
   let idDollMillk = "idDollMillk";
   let idCoconut = "idCoconut";
   let idReadyPack = "idReadyPack";
+  let idHartCake = "idHartCake";
+  let idNawaem = "idNawaem";
 
 
     const [show, setShow] = useState(false);
@@ -82,6 +86,8 @@ const Menu = () => {
         idDollMillk={idDollMillk}
         idCoconut={idCoconut}
         idReadyPack={idReadyPack}
+        idHartCake={idHartCake}
+        idNawaem={idNawaem}
       />
 
       <section id={idCake26} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
@@ -94,6 +100,9 @@ const Menu = () => {
 
       <section id={idCake18} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Cake18 />
+      </section>
+      <section id={idHartCake} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+        <HartCake />
       </section>
 
       <section id={idMixed} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
@@ -137,6 +146,9 @@ const Menu = () => {
       </section>
       <section id={idReadyPack} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <ReadyPackages />
+      </section>
+      <section id={idNawaem} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+        <Nawaem />
       </section>
       <section id={idChocolate} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Chocolate />

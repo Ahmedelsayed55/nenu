@@ -22,6 +22,8 @@ const NavItem = ({
   idDollMillk,
   idCoconut,
   idReadyPack,
+  idHartCake,
+  idNawaem,
 }) => {
   const swiperRef = useRef(null);
   const [active, setActive] = useState(id26);
@@ -60,6 +62,7 @@ const NavItem = ({
     { id: id26, label: "تورته مقاس (26)" },
     { id: id20, label: "تورته مقاس (20)" },
     { id: id18, label: "تورته مقاس (18)" },
+    { id: idHartCake, label: "تورت قلب" },
     { id: idMixed, label: "تورت مقاسات متنوعة" },
     { id: idLayers, label: "تورت أدوار" },
     { id: idGato, label: "جاتوة" },
@@ -74,6 +77,7 @@ const NavItem = ({
     { id: idDollMillk, label: "الملابن والجزريه" },
     { id: idCoconut, label: "جوز الهند واللديدة" },
     { id: idReadyPack, label: "العبوات الجاهزة" },
+    { id: idNawaem, label: "النواعم" },
     { id: idChocolate, label: "شيكولاتة" },
   ];
   useEffect(() => {
