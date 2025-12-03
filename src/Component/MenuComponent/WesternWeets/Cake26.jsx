@@ -1,3 +1,4 @@
+
 import Cake1 from "../../../assets/assets26/a1.png";
 import Cake2 from "../../../assets/assets26/a2.png";
 import Cake3 from "../../../assets/assets26/a3.png";
@@ -67,6 +68,8 @@ const Cake26 = ({ id }) => {
                 setOpen(true);
               }}
               className="rounded  shadow-2xl shadow-gray-400 pt-10 md:pt-15 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
+               data-wow-offset="200"
+
             >
               <img
                 className=" w-full md:w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
@@ -88,7 +91,7 @@ const Cake26 = ({ id }) => {
       {/* model for details */}
       {/* model for details */}
       {open && selectedItem && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4 ">
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4  ">
           <div
             onClick={(e) => e.stopPropagation()}
             className="bg-gray-100 rounded px-5 h-[80%] pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
