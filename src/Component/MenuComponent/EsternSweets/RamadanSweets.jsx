@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import glashmx from "../../../assets/assetsRmadan/glashmx.png";
 import mdl3amanga from "../../../assets/assetsRmadan/mdl3amanga.png";
 import asawer from "../../../assets/assetsRmadan/asawer.png";
@@ -6,36 +6,34 @@ import forma from "../../../assets/assetsRmadan/forma.png";
 import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
 import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
 import lotes from "../../../assets/assetsRmadan/lotes.png";
-export const RamadanSweets = ({id}) => {
-      const prduct = [
-        { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
-        { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },
-        { id: 3, name: " أساور", price: 35, img: asawer },
-        { id: 4, name: " أساور", price: 35, img: forma },
-        { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
-        { id: 5, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
-        { id: 5, name: " مدلعه لوتس ", price: 35, img: lotes },
-     
-      ];
-      const [selectedItem, setSelectedItem] = useState(null);
-      const [open, setOpen] = useState(false);
+export const RamadanSweets = ({ id }) => {
+  const prduct = [
+    { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
+    { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },
+    { id: 3, name: " أساور", price: 35, img: asawer },
+    { id: 4, name: " أساور", price: 35, img: forma },
+    { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
+    { id: 5, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
+    { id: 5, name: " مدلعه لوتس ", price: 35, img: lotes },
+  ];
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [open, setOpen] = useState(false);
 
-      
-useEffect(() => {
-  if (open) {
-    document.body.style.overflow = "hidden"; // يمنع الاسكرول
-  } else {
-    document.body.style.overflow = "auto"; // يرجع الاسكرول
-  }
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden"; // يمنع الاسكرول
+    } else {
+      document.body.style.overflow = "auto"; // يرجع الاسكرول
+    }
 
-  return () => {
-    document.body.style.overflow = "auto"; // احتياطي عند الخروج من الكمبوننت
-  };
-}, [open]);
+    return () => {
+      document.body.style.overflow = "auto"; // احتياطي عند الخروج من الكمبوننت
+    };
+  }, [open]);
   return (
     <div>
       <h1 className="text-[16px] font-bold md:text-2xl mb-5">
-        رمضانيات
+        تورته مقاس (26)
       </h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-2 md:gap-5"
@@ -49,14 +47,14 @@ useEffect(() => {
                 setSelectedItem(item);
                 setOpen(true);
               }}
-              className="rounded-sm shadow-2xl shadow-gray-400 pt-10 md:pt-15 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
+              className="rounded  shadow-2xl shadow-gray-400 pt-10 md:pt-15 px-1 flex flex-col items-center justify-between transition hover:scale-105 bg-gray-100 active:scale-110 focus:scale-110"
             >
               <img
                 className=" w-full md:w-60  md:mb-7 transition filter hover:drop-shadow-[0_10px_5px_rgba(102,231,239,0.2)]"
                 src={item.img}
                 alt="Cake"
               />
-              <div className="w-full flex flex-col gap-7 md:gap-12 py-3 px-3">
+              <div className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3">
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
                   {item.name}
                 </h2>
@@ -72,7 +70,10 @@ useEffect(() => {
       {/* model for details */}
       {open && selectedItem && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4 ">
-          <div onClick={(e)=>e.stopPropagation()} className="bg-gray-100 rounded px-5 h-[80%] pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative">
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="bg-gray-100 rounded px-5 h-[80%] pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+          >
             <button
               className="absolute px-5 py-4 top-2 right-4 text-red-600 text-2xl transition duration-300 cursor-pointer hover:bg-red-500 hover:text-white  rounded-full"
               onClick={() => setOpen(false)}
@@ -89,13 +90,13 @@ useEffect(() => {
               <h2 className="text-start text-[20px] md:text-[24px] font-bold text-cyan-950">
                 {selectedItem.name}
               </h2>
-             <h2 className="text-start text-[20px] md:text-[20px] font-bold text-cyan-700">
+              <h2 className="text-start text-[20px] md:text-[20px] font-bold text-cyan-700">
                 {selectedItem.price} ج.م
               </h2>
             </div>
           </div>
         </div>
-      )} 
+      )}
     </div>
-  )
-}
+  );
+};

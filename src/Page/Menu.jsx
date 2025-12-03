@@ -11,6 +11,11 @@ import Chocolate from "../Component/MenuComponent/Chocolate/Chocolate";
 import { CakeLayers } from "../Component/MenuComponent/WesternWeets/CakeLayers";
 import { RamadanSweets } from "../Component/MenuComponent/EsternSweets/RamadanSweets";
 import { Konafa } from "../Component/MenuComponent/EsternSweets/Konafa";
+import { Tary } from "../Component/MenuComponent/EsternSweets/Tary";
+import { Bogasha } from "../Component/MenuComponent/EsternSweets/Bogasha";
+import { Zyout } from "../Component/MenuComponent/EsternSweets/Zyout";
+import { Foram } from "../Component/MenuComponent/EsternSweets/Foram";
+import { Sewareh } from "../Component/MenuComponent/EsternSweets/Sewareh";
 const Menu = () => {
   let idCake26 = "idCake26";
   let idCake20 = "idCake20";
@@ -21,6 +26,11 @@ const Menu = () => {
   let idLayers = "idLayers";
   let idRamadan = "idRamadan";
   let idKonafa = "idKonafa";
+  let idTary = "idTary";
+  let idBogasha = "idBogasha";
+  let idZyout = "idZyout";
+  let idForam = "idForam";
+  let idٍSewareh = "idٍSewareh";
 
 
     const [show, setShow] = useState(false);
@@ -55,6 +65,11 @@ const Menu = () => {
         idLayers={idLayers}
         idRamadan={idRamadan}
         idKonafa={idKonafa}
+        idTary={idTary}
+        idBogasha={idBogasha}
+        idZyout={idZyout}
+        idForam={idForam}
+        idٍSewareh={idٍSewareh}
       />
 
       <section id={idCake26} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
@@ -83,6 +98,21 @@ const Menu = () => {
       </section>
       <section id={idKonafa} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Konafa />
+      </section>
+      <section id={idTary} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+        <Tary />
+      </section>
+      <section id={idBogasha} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+        <Bogasha />
+      </section>
+      <section id={idZyout} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+        <Zyout />
+      </section>
+      <section id={idForam} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+        <Foram />
+      </section>
+      <section id={idٍSewareh} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+        <Sewareh />
       </section>
       <section id={idChocolate} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Chocolate />

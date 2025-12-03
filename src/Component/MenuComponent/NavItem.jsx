@@ -13,6 +13,11 @@ const NavItem = ({
   idLayers,
   idRamadan,
   idKonafa,
+  idTary,
+  idBogasha,
+  idZyout,
+  idForam,
+  idٍSewareh,
 }) => {
   const swiperRef = useRef(null);
   const [active, setActive] = useState(id26);
@@ -56,6 +61,11 @@ const NavItem = ({
     { id: idGato, label: "جاتوة" },
     { id: idRamadan, label: "رمضانيات" },
     { id: idKonafa, label: "كنافات" },
+    { id: idTary, label: "الطري" },
+    { id: idBogasha, label: "البغاشه" },
+    { id: idZyout, label: "الزيوت" },
+    { id: idForam, label: "الفورم" },
+    { id: idٍSewareh, label: "سيواريهات" },
     { id: idChocolate, label: "شيكولاتة" },
   ];
   useEffect(() => {

@@ -6,7 +6,7 @@ import forma from "../../../assets/assetsRmadan/forma.png";
 import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
 import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
 import lotes from "../../../assets/assetsRmadan/lotes.png";
-export const Konafa = ({ id }) => {
+export const Bogasha = ({ id }) => {
   const prduct = [
     { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
     { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },

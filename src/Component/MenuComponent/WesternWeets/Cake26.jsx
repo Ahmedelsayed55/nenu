@@ -44,7 +44,7 @@ const Cake26 = ({ id }) => {
     } else {
       document.body.style.overflow = "auto"; // يرجع الاسكرول
     }
-  
+
     return () => {
       document.body.style.overflow = "auto"; // احتياطي عند الخروج من الكمبوننت
     };
@@ -73,7 +73,7 @@ const Cake26 = ({ id }) => {
                 src={item.img}
                 alt="Cake"
               />
-              <div className="w-full flex flex-col gap-7 md:gap-12 py-3 px-3">
+              <div className="w-full flex flex-col gap-4 md:gap-7 py-3 px-3">
                 <h2 className="text-start text-[14px] md:text-[24px] font-bold text-cyan-950">
                   {item.name}
                 </h2>
@@ -87,9 +87,12 @@ const Cake26 = ({ id }) => {
       </div>
       {/* model for details */}
       {/* model for details */}
-    {open && selectedItem && (
+      {open && selectedItem && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4 ">
-          <div onClick={(e)=>e.stopPropagation()} className="bg-gray-100 rounded px-5 h-[80%] pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative">
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="bg-gray-100 rounded px-5 h-[80%] pt-20 pb-5 w-sm  lg:w-md shadow-lg shadow-cyan-800 flex flex-col gap-10 items-center justify-between relative"
+          >
             <button
               className="absolute px-5 py-4 top-2 right-4 text-red-600 text-2xl transition duration-300 cursor-pointer hover:bg-red-500 hover:text-white  rounded-full"
               onClick={() => setOpen(false)}
@@ -106,13 +109,13 @@ const Cake26 = ({ id }) => {
               <h2 className="text-start text-[20px] md:text-[24px] font-bold text-cyan-950">
                 {selectedItem.name}
               </h2>
-             <h2 className="text-start text-[20px] md:text-[20px] font-bold text-cyan-700">
+              <h2 className="text-start text-[20px] md:text-[20px] font-bold text-cyan-700">
                 {selectedItem.price} ج.م
               </h2>
             </div>
           </div>
         </div>
-      )} 
+      )}
     </div>
   );
 };
