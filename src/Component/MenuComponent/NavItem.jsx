@@ -20,6 +20,8 @@ const NavItem = ({
   idٍSewareh,
   idٍDryNuts,
   idDollMillk,
+  idCoconut,
+  idReadyPack,
 }) => {
   const swiperRef = useRef(null);
   const [active, setActive] = useState(id26);
@@ -35,7 +37,7 @@ const NavItem = ({
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.2 }
     );
 
     sections.forEach((sec) => observer.observe(sec));
@@ -70,6 +72,8 @@ const NavItem = ({
     { id: idٍSewareh, label: "سيواريهات" },
     { id: idٍDryNuts, label: "نواشف ومكسرات" },
     { id: idDollMillk, label: "الملابن والجزريه" },
+    { id: idCoconut, label: "جوز الهند واللديدة" },
+    { id: idReadyPack, label: "العبوات الجاهزة" },
     { id: idChocolate, label: "شيكولاتة" },
   ];
   useEffect(() => {

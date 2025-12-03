@@ -16,7 +16,7 @@ export const Gato = ({ id }) => {
     { id: 11, name: "اكلير", price: 35, img: Cake },
     { id: 12, name: "هولز", price: 35, img: Cake2 },
     { id: 13, name: "اكلير", price: 35, img: Cake },
-    { id: 24, name: "هولز", price: 35, img: Cake2 },
+    { id: 14, name: "هولز", price: 35, img: Cake2 },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

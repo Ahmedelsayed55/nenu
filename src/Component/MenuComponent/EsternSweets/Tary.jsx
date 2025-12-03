@@ -13,8 +13,8 @@ export const Tary = ({ id }) => {
     { id: 3, name: " أساور", price: 35, img: asawer },
     { id: 4, name: " أساور", price: 35, img: forma },
     { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
-    { id: 5, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
-    { id: 5, name: " مدلعه لوتس ", price: 35, img: lotes },
+    { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
+    { id: 7, name: " مدلعه لوتس ", price: 35, img: lotes },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

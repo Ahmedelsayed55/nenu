@@ -12,3 +12,25 @@ html {
   font-family: "Amiri", serif;
 }
 
+* {
+  scrollbar-width: thin;              /* للفايرفوكس */
+  scrollbar-color: #474747 #e5e7eb;   /* للفايرفوكس (thumb, track) */
+}
+
+/* للكروم / إيدج / سفاري */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb; /* gray-200 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0ea5e9; /* sky-500 */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0369a1; /* sky-700 */
+}
