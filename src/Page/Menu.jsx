@@ -16,6 +16,8 @@ import { Bogasha } from "../Component/MenuComponent/EsternSweets/Bogasha";
 import { Zyout } from "../Component/MenuComponent/EsternSweets/Zyout";
 import { Foram } from "../Component/MenuComponent/EsternSweets/Foram";
 import { Sewareh } from "../Component/MenuComponent/EsternSweets/Sewareh";
+import DryNuts from "../Component/MenuComponent/Dry&/DryNuts";
+import DollMillk from "../Component/MenuComponent/Dry&/DollMillk";
 const Menu = () => {
   let idCake26 = "idCake26";
   let idCake20 = "idCake20";
@@ -31,6 +33,8 @@ const Menu = () => {
   let idZyout = "idZyout";
   let idForam = "idForam";
   let idٍSewareh = "idٍSewareh";
+  let idٍDryNuts = "idٍDryNuts";
+  let idDollMillk = "idDollMillk";
 
 
     const [show, setShow] = useState(false);
@@ -70,6 +74,8 @@ const Menu = () => {
         idZyout={idZyout}
         idForam={idForam}
         idٍSewareh={idٍSewareh}
+        idٍDryNuts={idٍDryNuts}
+        idDollMillk={idDollMillk}
       />
 
       <section id={idCake26} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
@@ -113,6 +119,12 @@ const Menu = () => {
       </section>
       <section id={idٍSewareh} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Sewareh />
+      </section>
+      <section id={idٍDryNuts} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+        <DryNuts />
+      </section>
+      <section id={idDollMillk} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
+        <DollMillk />
       </section>
       <section id={idChocolate} className=" max-w-[1920px] mx-auto px-1 py-7 md:px-5 md:py-12 scroll-mt-24">
         <Chocolate />
