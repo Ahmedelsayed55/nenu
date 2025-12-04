@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
 const NavBar = () => {
   return (
     <div className="container px-2  fixed top-3 left-1/2 -translate-x-1/2 z-50 ">
@@ -19,7 +19,9 @@ const NavBar = () => {
             تواصل معنا
           </Link>
         </nav>
-        <img className="w-12 h-10 md:w-19 md:h-12" src={logo} alt="Logo" />
+        {/* <img className="w-12 h-10 md:w-19 md:h-12" src={logo} alt="Logo" />
+         */}
+         <h1 className="font-retaj -mt-4  text-3xl md:text-4xl text-yellow-700 md:px-10">ريتاج</h1>
       </header>
     </div>
   );
