@@ -10,14 +10,7 @@ export const Cake18 = ({ id }) => {
     { id: 6, name: "تورته فلاور (20)", price: 350, img: Cake },
     { id: 7, name: "تورته فلاور (20)", price: 350, img: Cake },
     { id: 8, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 9, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 10, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 11, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 12, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 13, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 14, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 15, name: "تورته فلاور (20)", price: 350, img: Cake },
-    { id: 16, name: "تورته فلاور (20)", price: 350, img: Cake },
+
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

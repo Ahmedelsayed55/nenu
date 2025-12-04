@@ -1,40 +1,16 @@
-import Cake1 from "../../../assets/assets26/a1.png";
-import Cake2 from "../../../assets/assets26/a2.png";
-import Cake3 from "../../../assets/assets26/a3.png";
-import Cake4 from "../../../assets/assets26/a4.png";
-import Cake5 from "../../../assets/assets26/a5.png";
-import Cake6 from "../../../assets/assets26/a6.png";
-import Cake7 from "../../../assets/assets26/a7.png";
-import Cake8 from "../../../assets/assets26/a8.png";
-import Cake9 from "../../../assets/assets26/a9.png";
-import Cake10 from "../../../assets/assets26/a10.png";
-import Cake11 from "../../../assets/assets26/a11.png";
-import Cake12 from "../../../assets/assets26/a12.png";
-import Cake14 from "../../../assets/assets26/a14.png";
-import Cake15 from "../../../assets/assets26/a15.png";
-import Cake16 from "../../../assets/assets26/a16.png";
-import Cake17 from "../../../assets/assets26/a17.png";
-import Cake18 from "../../../assets/assets26/a18.png";
+import chocolate from "../../../assets/assetsHart/a5.png";
+import blackForst from "../../../assets/assetsHart/a6.png";
+import frot from "../../../assets/assetsHart/a8.png";
+import redvalved from "../../../assets/assetsHart/a9.png";
+
 import { useEffect, useState } from "react";
 const HartCake = ({ id }) => {
   const prduct = [
-    { id: 1, name: "تورته فلاور ", price: 350, img: Cake1 },
-    { id: 2, name: "تورته لوتس شيكولاته ", price: 350, img: Cake2 },
-    { id: 3, name: "تورته جلاكسي ", price: 350, img: Cake3 },
-    { id: 4, name: "تورته نوتيلا فراوله ", price: 350, img: Cake4 },
-    { id: 5, name: "تورته قلب شيكولاته ", price: 350, img: Cake5 },
-    { id: 6, name: "تورته قلب بلاك فورست ", price: 350, img: Cake6 },
-    { id: 7, name: "تورته هاف كارميل شيكولاته ", price: 350, img: Cake7 },
-    { id: 8, name: "تورته قلب فاكهة  ", price: 350, img: Cake8 },
-    { id: 9, name: "تورته قلب ريد فاليفت ", price: 350, img: Cake9 },
-    { id: 10, name: "تورته سنيكرز ", price: 350, img: Cake10 },
-    { id: 11, name: "تورته ايت سيزون ", price: 350, img: Cake11 },
-    { id: 12, name: "تورته سنيكرز ", price: 350, img: Cake12 },
-    { id: 14, name: "تورته سنيكرز ", price: 350, img: Cake14 },
-    { id: 15, name: "تورته سنيكرز ", price: 350, img: Cake15 },
-    { id: 16, name: "تورته هاف جلاكسي & فاكهة ", price: 350, img: Cake16 },
-    { id: 17, name: "تورته سنيكرز ", price: 350, img: Cake17 },
-    { id: 18, name: "تورته سنيكرز ", price: 350, img: Cake18 },
+    { id: 1, name: "تورته قلب ريد فلفيد ", price: 350, img: redvalved },
+    { id: 2, name: "تورته قلب بلاك فورست ", price: 350, img: blackForst },
+    { id: 3, name: "تورته قلب فاكهه ", price: 350, img: frot },
+    { id: 4, name: "تورته قلب شيكولاتة ", price: 350, img: chocolate },
+
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

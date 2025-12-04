@@ -12,10 +12,7 @@ const ReadyPackages = ({ id }) => {
     { id: 8, name: "شيكولاته", price: 35, img: Cake },
     { id: 9, name: "شيكولاته", price: 35, img: Cake },
     { id: 10, name: "شيكولاته", price: 35, img: Cake },
-    { id: 11, name: "شيكولاته", price: 35, img: Cake },
-    { id: 12, name: "شيكولاته", price: 35, img: Cake },
-    { id: 13, name: "شيكولاته", price: 35, img: Cake },
-    { id: 14, name: "شيكولاته", price: 35, img: Cake },
+
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

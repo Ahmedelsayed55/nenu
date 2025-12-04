@@ -1,21 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Cake from "../../../assets/chocolate.png";
+import keshta from "../../../assets/assetsCoconut/keshta.png";
+import ldeda from "../../../assets/assetsCoconut/ldeda.png";
 const Coconut = ({ id }) => {
   const prduct = [
-    { id: 1, name: "شيكولاته", price: 35, img: Cake },
-    { id: 2, name: "شيكولاته", price: 35, img: Cake },
-    { id: 3, name: "شيكولاته", price: 35, img: Cake },
-    { id: 4, name: "شيكولاته", price: 35, img: Cake },
-    { id: 5, name: "شيكولاته", price: 35, img: Cake },
-    { id: 6, name: "شيكولاته", price: 35, img: Cake },
-    { id: 7, name: "شيكولاته", price: 35, img: Cake },
-    { id: 8, name: "شيكولاته", price: 35, img: Cake },
-    { id: 9, name: "شيكولاته", price: 35, img: Cake },
-    { id: 10, name: "شيكولاته", price: 35, img: Cake },
-    { id: 11, name: "شيكولاته", price: 35, img: Cake },
-    { id: 12, name: "شيكولاته", price: 35, img: Cake },
-    { id: 13, name: "شيكولاته", price: 35, img: Cake },
-    { id: 14, name: "شيكولاته", price: 35, img: Cake },
+    { id: 1, name: "قشطة", price: 150, img: keshta },
+    { id: 2, name: "لديدة بيضاء", price: 275, img: ldeda },
+  
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

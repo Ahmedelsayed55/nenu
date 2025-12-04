@@ -1,22 +1,20 @@
 import React, { useEffect, useState } from "react";
-import Cake from "../../../assets/ecklear.png";
-import Cake2 from "../../../assets/hols.png";
+import Cake from "../../../assets/assetsGato/ecklear.png";
+import Cake2 from "../../../assets/assetsGato/hols.png";
+import cheesCake from "../../../assets/assetsGato/cheesCake.png";
+import melfay from "../../../assets/assetsGato/melfay.png";
+import melfaych from "../../../assets/assetsGato/melfaych.png";
+import swesrol from "../../../assets/assetsGato/swesrol.png";
+import swesroul from "../../../assets/assetsGato/swesroul.png";
 export const Gato = ({ id }) => {
   const prduct = [
     { id: 1, name: "اكلير", price: 35, img: Cake },
-    { id: 2, name: "هولز", price: 35, img: Cake2 },
-    { id: 3, name: "اكلير", price: 35, img: Cake },
-    { id: 4, name: "هولز", price: 35, img: Cake2 },
-    { id: 5, name: "اكلير", price: 35, img: Cake },
-    { id: 6, name: "هولز", price: 35, img: Cake2 },
-    { id: 7, name: "اكلير", price: 35, img: Cake },
-    { id: 8, name: "هولز", price: 35, img: Cake2 },
-    { id: 9, name: "اكلير", price: 35, img: Cake },
-    { id: 10, name: "هولز", price: 35, img: Cake2 },
-    { id: 11, name: "اكلير", price: 35, img: Cake },
-    { id: 12, name: "هولز", price: 35, img: Cake2 },
-    { id: 13, name: "اكلير", price: 35, img: Cake },
-    { id: 14, name: "هولز", price: 35, img: Cake2 },
+    { id: 2, name: "هولز", price: 17, img: Cake2 },
+    { id: 3, name: "تشيزكيك", price: 25, img: cheesCake },
+    { id: 4, name: "سويسرول ", price: 15, img: swesrol },
+    { id: 5, name: "ملفاي", price: 20, img: melfay },
+    { id: 6, name: "ملفاي شيكولاته", price: 20, img: melfaych },
+    { id: 7, name: "سويسرول ", price: 15, img: swesroul },
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
