@@ -1,20 +1,18 @@
 import React, { useEffect, useState } from "react";
-import glashmx from "../../../assets/assetsRmadan/glashmx.png";
-import mdl3amanga from "../../../assets/assetsRmadan/mdl3amanga.png";
-import asawer from "../../../assets/assetsRmadan/asawer.png";
-import forma from "../../../assets/assetsRmadan/forma.png";
-import kornehkrema from "../../../assets/assetsRmadan/kornehkrema.png";
-import kornehnotela from "../../../assets/assetsRmadan/kornehnotela.png";
-import lotes from "../../../assets/assetsRmadan/lotes.png";
+import kahk from "../../../assets/assetsNawa3em/ka7k.png";
+import ghreba from "../../../assets/assetsNawa3em/ghreba.png";
+import betefor from "../../../assets/assetsNawa3em/betefor.png";
+import bskwet from "../../../assets/assetsNawa3em/bskwet.png";
+import sableh from "../../../assets/assetsNawa3em/sableh.png";
+
 export const Nawaem = ({ id }) => {
   const prduct = [
-    { id: 1, name: "جلاش مكسرت", price: 35, img: glashmx },
-    { id: 2, name: "مدلعه مانجا", price: 35, img: mdl3amanga },
-    { id: 3, name: " أساور", price: 35, img: asawer },
-    { id: 4, name: " أساور", price: 35, img: forma },
-    { id: 5, name: " كورنيه كريما ", price: 35, img: kornehkrema },
-    { id: 6, name: " كورنيه نوتيلا ", price: 35, img: kornehnotela },
-    { id: 7, name: " مدلعه لوتس ", price: 35, img: lotes },
+    { id: 1, name: " كحك", price: 170, img: kahk },
+    { id: 2, name: " غريبه", price: 190, img: ghreba },
+    { id: 3, name: " غريبة", price: 190, img: betefor },
+    { id: 4, name: " بسكويت", price: 180, img: bskwet },
+    { id: 5, name: "سابلية", price: 190, img: sableh },
+
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);

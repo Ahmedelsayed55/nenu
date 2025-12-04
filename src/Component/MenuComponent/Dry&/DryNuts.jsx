@@ -1,21 +1,15 @@
 import React, { useEffect, useState } from "react";
-import Cake from "../../../assets/chocolate.png";
+import sodani from "../../../assets/assetsDryNuts/sodani.png";
+import homs from "../../../assets/assetsDryNuts/homs.png";
+import noga from "../../../assets/assetsDryNuts/noga.png";
+import semsem from "../../../assets/assetsDryNuts/semsem.png";
 const DryNuts = ({ id }) => {
   const prduct = [
-    { id: 1, name: "شيكولاته", price: 35, img: Cake },
-    { id: 2, name: "شيكولاته", price: 35, img: Cake },
-    { id: 3, name: "شيكولاته", price: 35, img: Cake },
-    { id: 4, name: "شيكولاته", price: 35, img: Cake },
-    { id: 5, name: "شيكولاته", price: 35, img: Cake },
-    { id: 6, name: "شيكولاته", price: 35, img: Cake },
-    { id: 7, name: "شيكولاته", price: 35, img: Cake },
-    { id: 8, name: "شيكولاته", price: 35, img: Cake },
-    { id: 9, name: "شيكولاته", price: 35, img: Cake },
-    { id: 10, name: "شيكولاته", price: 35, img: Cake },
-    { id: 11, name: "شيكولاته", price: 35, img: Cake },
-    { id: 12, name: "شيكولاته", price: 35, img: Cake },
-    { id: 13, name: "شيكولاته", price: 35, img: Cake },
-    { id: 14, name: "شيكولاته", price: 35, img: Cake },
+    { id: 1, name: "سودانية", price: 150, img: sodani },
+    { id: 1, name: "حمصية", price: 150, img: homs },
+    { id: 1, name: "نوجا", price: 150, img: noga },
+    { id: 1, name: "سمسمية", price: 160, img: semsem },
+
   ];
   const [selectedItem, setSelectedItem] = useState(null);
   const [open, setOpen] = useState(false);
